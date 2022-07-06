@@ -1,0 +1,205 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    transition: 0.7s;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Righteous', cursive;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to top,rgb(0,0,0,0.9),rgb(0,0,0,0.3)) ,url(img/winter.jpg) no-repeat center/cover;     
+}
+
+.weather{
+    position: relative;
+    width: 80%;
+    height: 500px;
+    padding: 15px;
+    border-radius: 7px;
+    transition: 0.6s;
+    box-shadow: 0 3px rgb(0,3,3,0.4);
+    background: url(img/winter.jpg) no-repeat center/cover;
+}
+
+.hot{
+    background: url(img/summerjpg.jpg) no-repeat center/cover;
+
+}
+
+.hot-bg{
+    background: linear-gradient(to top,rgb(0,0,0,0.9),rgb(0,0,0,0.3)) ,url(img/summerjpg.jpg) no-repeat center/cover;     
+}
+
+.warm{
+    background: url(img/autumm.jpg) no-repeat center/cover;
+
+}
+
+.warm-bg{
+    background: linear-gradient(to top,rgb(0,0,0,0.9),rgb(0,0,0,0.3)) ,url(img/autumm.jpg) no-repeat center/cover;     
+}
+
+.cold{
+    background: url(img/spring.jpg) no-repeat center/cover;
+
+}
+
+.cold-bg{
+    background: linear-gradient(to top,rgb(0,0,0,0.9),rgb(0,0,0,0.3)) ,url(img/spring.jpg) no-repeat center/cover;     
+}
+
+
+
+.input{
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Righteous', cursive;
+    width: 80%;
+    height: 35px;
+    padding: 10px 10px;
+    margin-bottom: 7PX;
+    border: none;
+    outline: none;
+    border-radius: 0 5px 0 5px;
+    background-color: rgb(255,255,255,0.7);
+    box-shadow: 0 3px rgb(0,0,0,0.2);
+    margin-bottom: 40px;
+    transition: 0.6s;
+}
+
+.input:focus{
+    background-color: rgb(255,255,255,0.9);
+}
+
+.content{
+    text-align: center;
+    color: white;
+    text-shadow: 0 3px rgb(0,0,0,0.2);
+    transition: 0.6s;
+}
+
+.location{
+    font-size: 40px;
+    transition: 0.6s;
+}
+
+.time{
+    margin-top: 10px;
+    margin-bottom: 35px;
+    transition: 0.6s;
+}
+
+.temperature{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(83, 77, 77, 0.5);
+    height: 100px;
+    border-radius: 5px;
+    font-size: 60px;
+    box-shadow: 0 3px rgb(0,0,0,0.2);
+    transition: 0.6s;
+}
+
+.short{
+    font-size: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.6s;
+}
+
+.icon{
+    font-size: 18px;
+    margin: 10px;
+    transition: 0.6s;
+}
+
+.icon-cloud{
+    font-size: 30px;
+    vertical-align: middle;
+}
+
+.icon div{
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s;
+}
+
+.wind , .eye , .water{
+    font-size: 30px;
+}
+
+.more{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    transition: 0.6s;
+}
+
+.hide{
+    display: none;
+}
+
+.notification{
+    color: white;
+    text-shadow: 3px 3px 3px rgb(0,3,3,0.4);
+}
+
+.last-p{
+    font-family:  Dosis;
+    position: absolute;
+    top: 35px;
+    color: white;
+    font-size: 20px;
+
+}
+
+.search-bt{
+    position: absolute;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    top: 15px;
+    right: 25px;
+    height: 35px;
+    width: 35px;
+    background-color: rgb(255,255,255,0.7);
+    box-shadow: 0 3px rgb(0,0,0,0.2);
+    transition: 0.5s;
+}
+
+.search-bt:hover , .input:hover{
+    background-color: white;
+}
+
+@media screen and (min-width:600px) {
+    .search-bt{
+        right: 60px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .search-bt{
+        right: 80px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .search-bt{
+        right: 120px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .weather{
+        width: 400px;
+    }
+
+    .search-bt{
+        right: 40px;
+    }
+}
